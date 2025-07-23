@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;1,400&display=swap');
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #7f9ec4, #65d5ae, #435e8c, #7f9ec4);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+.glass-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 300px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-5px) translateX(3px); }
+  50% { transform: translateY(0) translateX(0); }
+  75% { transform: translateY(5px) translateX(-3px); }
+}
+
+.glass-card h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdownBtn {
+  background-color: rgba(29, 191, 213, 0.364);
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#dropdownBtn:hover {
+  background-color: rgba(60, 6, 6, 0.2);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(11, 75, 95, 0.536);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  width: 200px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.title {
+  position: absolute;
+  top: 22%;
+  font-size: 2.5rem;
+  font: poppins;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
