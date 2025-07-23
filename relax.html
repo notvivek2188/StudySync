@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relaxation Page</title>
+  <link rel="stylesheet" href="relax.css">
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+
+
+</head>
+<body>
+
+
+  <header class="glass-header">
+    <div class="header-container">
+      <h1 class="title">Relax</h1>
+      <a href="index.html" class="home-button">Home</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="quote-box">
+      <p id="typewriter-text"></p>
+    </div>
+  </main>   
+
+  <div class="happy-thoughts-container">
+    <div class="thought-box">🌞 The sun always rises again.</div>
+    <div class="thought-box">🌿 Small steps lead to big changes.</div>
+    <div class="thought-box">🌈 You deserve peace and joy.</div>
+  </div>
+
+  <div class="exercise-intro">
+    <p>Let's try some exercises to reduce your stress ✨</p>
+  </div>
+
+  <div class="card foreground"></div>
+  <div class="meditation-card">
+    <h2>Meditation Time 🧘‍♀️</h2>
+    <lottie-player 
+      src="https://assets5.lottiefiles.com/packages/lf20_kvwtrk4n.json"
+      class="position_lottie"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+    <p>Take a few minutes to focus on your breath and be present in the moment.</p>
+
+     <button id="start-btn" onclick="startMeditation()">Start Meditation</button>
+  <p id="timer-display" style="margin-top: 20px; font-size: 1.2rem;"></p>
+
+  </div>
+
+  <script src="relax.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  
+<div class="page-wrapper">
+  <div id="particles-js"></div>
+
+  <div class="breathing-section">
+  <div class="breath-challenge-card glass-box">
+    <h2>Breath-Hold Challenge 🫁</h2>
+    <p>Try to hold your breath as long as you can. Can you beat the world record of <strong>24:37</strong>?</p>
+    <button id="start-breath" onclick="startBreathChallenge()">Start Challenge</button>
+    <button id="stop-breath" onclick="stopBreathChallenge()" style="display: none;">Stop</button>
+    <p id="breath-timer">0:00</p>
+    <p id="breath-result" style="font-weight: bold;"></p>
+  </div>
+
+  <div class="guided-breathing-card glass-box">
+    <h2>Guided Breathing 🌬️</h2>
+    <p>Follow the circle — inhale as it expands, exhale as it shrinks. Focus on your breath for 1 minute.</p>
+    <div class="breathing-circle"></div>
+  </div>
+</div>
+
+<a href="study_room.html">
+<div class="back-button-container">
+  <button class="back-button">📚✨ Back to Studying</button>
+</div>
+</a>
+
+
+
+
+
+</div>
+</body>
+</html>
