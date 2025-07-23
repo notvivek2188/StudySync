@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✏️ StudySync</title>
+  <link rel="stylesheet" href="try.css">
+</head>
+<body >
+
+<h2 class="title">✏️StudySync</h2>
+
+
+  <div class="glass-card">
+    <h1>Choose Your Stream</h1>
+    
+    <div class="dropdown">
+      <button id="dropdownBtn">Select Stream ⌄</button>
+      <div id="dropdownMenu" class="dropdown-menu hidden">
+        <a href="humanities.html">Humanities</a>
+        <a href="commerce.html">Commerce</a>
+        <a href="science.html">Science</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const dropdownBtn = document.getElementById("dropdownBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    dropdownBtn.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+  </script>
+
+</div>
+</body>
+</html>
