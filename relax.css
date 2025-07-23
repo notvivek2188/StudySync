@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;1,400&display=swap');
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #c2b280, #99cba3);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1s ease-out;
+}
+
+.glass-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.home-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.quote-box {
+  position: absolute;
+  color: white;
+  top: 160px;
+  font-size: 24px;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.happy-thoughts-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 300px;
+  padding: 0 20px;
+}
+
+.thought-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.thought-box:hover {
+  transform: scale(1.03);
+}
+
+.exercise-intro {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.meditation-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 500px;
+  color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.meditation-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.meditation-card p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.meditation-card button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #a1d6bf;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+.meditation-card button:hover {
+  background: #62d2d6;
+}
+
+.position_lottie {
+  width: 260px;
+  height: 320px;
+  margin: 0 auto 20px;
+  display: block;
+  position: static;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; 
+  background: transparent;
+  pointer-events: none; 
+}
+
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.foreground {
+  position: relative;
+  z-index: 1; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.breathing-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  width: 460px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.glass-box button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background: #fdd692;
+  color: #1e1e2f;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.glass-box button:hover {
+  background: #ffc76c;
+}
+
+#breath-timer {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+
+.breathing-circle {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: breathe 8s infinite;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes breathe {
+  0%   { transform: scale(1); opacity: 0.7; }
+  50%  { transform: scale(1.8); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+.back-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px; 
+}
+
+.back-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: #a1d6bf;
+  color: #222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background: #92d0f0;
+  transform: translateY(-2px);
+}

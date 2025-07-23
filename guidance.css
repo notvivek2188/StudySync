@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+   font-family: Poppins;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(-45deg, #64d27fdc, #72a6ab, #dce657, #736cd4);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite, fadeIn 1s ease-out;
+}
+
+.glass-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.glass-header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-content {
+  padding-top: 100px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+    position: absolute;
+    height: 450px;
+    width: 1100px;
+    left: 169px;
+    top: 333px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 20px 60px 30px 40px;
+}
+
+#hr1 {
+    position: absolute;
+    height: 307px;
+    width: .023px;
+    top: 110px;
+    left: 568px;
+}
+
+#request {
+    position: absolute;
+    font-size: 40px;
+    top: 10px;
+    left: 608px;
+}
+
+
+#list-items {
+    position: absolute;
+    color: #333;
+    font-size: 20px;
+    left: 578px;
+    top: 140px;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #c7dfb0, #d4e1cb);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-left img {
+  max-width: 220px;
+  height: auto;
+}
+
+.contact-right {
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-right p {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+#questionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#userQuestion {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+#questionForm button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #4c987b;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#questionForm button:hover {
+  background-color: #35735a;
+}
